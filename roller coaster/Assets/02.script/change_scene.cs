@@ -5,27 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class change_scene : MonoBehaviour
 {
-    public GameObject obj;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
+    {
+        
+    }
+    private void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-    public void NextSceneWithNum()
-    {
-        if(private void OnTriggerEnter(Collider other)
-    {
-        
-    }
-        {
-            SceneManager.LoadScene(1);
-        }
-        
+        SceneManager.LoadScene("First_scene");
+
+        //if(other.gameObject.layer == 3)
+        //{
+        //    SceneManager.LoadScene("Second_scene");
+        //}
     }
 }
