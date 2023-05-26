@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 
 using UnityEngine;
-using System.Collections;
+
 
 public class CoasterfollowerAdv : MonoBehaviour {
 
@@ -42,7 +42,6 @@ public class CoasterfollowerAdv : MonoBehaviour {
 
     void Start()
     {
-
         //get the rails
         fragments = GameObject.FindGameObjectsWithTag("fragment");
 
@@ -110,17 +109,15 @@ public class CoasterfollowerAdv : MonoBehaviour {
 
                 if (indexCurrent == numberOfPoints - 1)
                 {
-                    indexNext = 0;
+                    indexCurrent = 0;
                 }
+
                 else
                 {
                     indexNext = indexCurrent + 1;
                 }
 
-                if(indexCurrent==numberOfPoints-1)
-                {
-                    indexCurrent = 0;
-                }
+              
 
                 //obtain elapsed for lerp using KINETIC ENERGY
                 elapsed = 0;
